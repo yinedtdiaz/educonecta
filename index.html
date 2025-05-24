@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduConecta</title>
+
+  <!-- Fuente Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="h-screen w-screen overflow-hidden relative bg-gray-300">
+
+  <!-- Fondo visual -->
+  <div class="absolute inset-0 z-0">
+    <img src="https://gifdb.com/images/high/4k-anime-498-x-280-gif-lpvb2vnfrirflkzs.gif"
+         alt="fondo"
+         class="w-full h-full object-cover opacity-20 blur-sm scale-105 transition-all duration-1000" />
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6 bg-white/30 backdrop-blur-md">
+
+    <!-- Título -->
+    <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4 animate-fade-in-up">
+      EduConecta
+    </h1>
+
+    <!-- Subtítulo -->
+    <p class="text-lg md:text-xl text-gray-800 max-w-2xl mb-8 font-medium animate-fade-in-up delay-200">
+      Conectando familias, docentes y estudiantes con tecnología que transforma la educación.
+    </p>
+
+    <!-- Botón de descarga -->
+    <a href="https://github.com/yinedtdiaz/educonecta/releases/download/1.0/EduConecta-1.0.apk" download
+       class="bg-gradient-to-r from-indigo-600 to-blue-500 hover:scale-105 hover:from-indigo-700 hover:to-blue-600 transition-all duration-300 text-white font-semibold py-3 px-8 rounded-full text-lg shadow-lg animate-fade-in-up delay-300">
+      Descargar APP
+    </a>
+
+    <!-- Estadísticas -->
+    <div class="mt-10 flex flex-col md:flex-row gap-6 text-center text-gray-800 animate-fade-in-up delay-500">
+      <div class="transform hover:scale-105 transition duration-300">
+        <p class="text-3xl font-bold text-blue-600">20%</p>
+        <p class="text-sm">Menos deserción escolar</p>
+      </div>
+      <div class="transform hover:scale-105 transition duration-300">
+        <p class="text-3xl font-bold text-green-600">90%</p>
+        <p class="text-sm">Mejor comunicación</p>
+      </div>
+      <div class="transform hover:scale-105 transition duration-300">
+        <p class="text-3xl font-bold text-purple-600">100%</p>
+        <p class="text-sm">Detección emocional temprana</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Animaciones personalizadas -->
+  <style>
+    @keyframes fade-in-up {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-up {
+      animation: fade-in-up 0.8s ease-out forwards;
+      opacity: 0;
+    }
+
+    .delay-200 {
+      animation-delay: 0.2s;
+    }
+
+    .delay-300 {
+      animation-delay: 0.3s;
+    }
+
+    .delay-500 {
+      animation-delay: 0.5s;
+    }
+  </style>
+
+</body>
+</html>
